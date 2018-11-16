@@ -1,7 +1,19 @@
 # linuxshell
 一些工作自己写的shell脚本，放在这里记录一下
 
-VPS自动寻找脚本设定定时任务
+#### VPS自动寻找脚本设定定时任务
+
+```powershell
+./build.ps1
+```
+
+#### Linux / OS X
+
+```console
+./build.sh
+```
+
+
 auto_set_crontab.sh
 
 curl检测指定链接返回值，若返回值非200，则自动重新拨号
