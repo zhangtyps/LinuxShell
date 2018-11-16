@@ -4,26 +4,29 @@
 #### VPS自动寻找脚本设定定时任务
 
 ```powershell
-./build.ps1
+./auto_set_crontab.sh
 ```
 
-#### Linux / OS X
+#### curl检测指定链接返回值，若返回值非200，则自动重新拨号
 
-```console
-./build.sh
+```powershell
+./check_curl.sh
 ```
 
+#### 检测php yii任务，并做失败重启
 
-auto_set_crontab.sh
+```powershell
+./check_yiic.sh
+```
 
-curl检测指定链接返回值，若返回值非200，则自动重新拨号
-check_curl.sh
+#### 统计squid.log，计算代理请求次数和代理成功率
 
-检测php yii任务，并做失败重启
-check_yiic.sh
+```powershell
+./count_squidlog.sh
+```
 
-统计squid.log，计算代理请求次数和代理成功率
-count_squidlog.sh
+#### 一个简单的以秒为单位，循环执行任务的小脚本
 
-一个简单的以秒为单位，循环执行任务的小脚本
-loop_mission.sh
+```powershell
+./loop_mission.sh
+```
