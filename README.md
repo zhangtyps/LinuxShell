@@ -4,30 +4,30 @@
 
 #### VPS自动寻找脚本设定定时任务
 
-```powershell
+```console
 ./auto_set_crontab.sh
 ```
 
 #### curl检测指定链接返回值，若返回值非200，则自动重新拨号
 
-```powershell
+```console
 ./check_curl.sh
 ```
 
 #### 检测php yii任务，并做失败重启
 
-```powershell
+```console
 ./check_yiic.sh
 ```
 
 #### 统计squid.log，计算代理请求次数和代理成功率
 
-```powershell
+```console
 ./count_squidlog.sh
 ```
 
 #### 一个简单的以秒为单位，循环执行任务的小脚本
 
-```powershell
+```console
 ./loop_mission.sh
 ```
