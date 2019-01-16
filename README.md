@@ -1,6 +1,12 @@
 # Linux Shell
 一些工作自己写的shell脚本，放在这里记录一下
 
+
+#### 一个比较局限的自动删除日志小脚本，目前功能有限，后续改进
+```console
+./auto_delete_log.sh
+```
+
 #### scp-autoDownOrSend/ 解决大量Linux机器相互传文件的问题
 ```console
 # 服务器远程分发文件脚本，适用于大量账户密码相同客户机分发文件
