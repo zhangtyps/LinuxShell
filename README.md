@@ -2,6 +2,14 @@
 一些工作自己写的shell脚本，放在这里记录一下
 
 
+#### get_log_to_csv/ 从大量Linux上取日志，并作分析输出表格
+```console
+# 从各个host里下载机器上的日志，做日志分析并输出文件，以便后续python的表格处理
+./collectlog.sh
+# 把collectlog.sh的输出结果，分析并输出csv表格
+./to_csv.py
+```
+
 #### 一个比较局限的自动清空日志小脚本（非删除日志），目前功能有限，后续改进
 ```console
 ./auto_delete_log.sh
