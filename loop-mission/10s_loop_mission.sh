@@ -1,4 +1,5 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #简单的循环执行命令，此为10秒执行一次，在定时任务里1分钟启动一次
 COUNT=0
 while true

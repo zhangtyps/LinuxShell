@@ -1,4 +1,5 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #根据squid请求日志计算代理请求成功率
 Filename=`find / -name access.log`
 echo "------------------------------------------------------------------------------------------"

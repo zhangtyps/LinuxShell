@@ -1,4 +1,5 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #服务器远程分发文件脚本，适用于给大量账户密码相同的客户机快速分发文件（多线程分发）
 #需要安装sshpass以实现此脚本核心功能，yum install sshpass
 #运行脚本时带入参数1则根据失败日志进行重发

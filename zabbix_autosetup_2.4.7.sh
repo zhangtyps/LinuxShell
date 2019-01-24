@@ -1,4 +1,5 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #zabbix2.4.7自动安装脚本
 #2019-1-7修改版
 

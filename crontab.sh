@@ -1,5 +1,5 @@
 #!/bin/bash
-#访问我的GitHub获得最新版的脚本：https://github.com/zhangtyps/LinuxShell
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #version 2.0
 #几乎重构了脚本，优化了脚本的写法，加入了严谨的参数判断，放弃了检测定时任务里的脚本是否存在的功能（因为没有意义）
 

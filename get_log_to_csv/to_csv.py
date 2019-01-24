@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #将collectlog.sh的输出内容转换为表格
-#访问我的GitHub获得最新版的脚本：https://github.com/zhangtyps/LinuxShell
 #version 1.0
 
 import os,csv

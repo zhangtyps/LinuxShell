@@ -1,5 +1,7 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #本脚本通过循环遍历数组，检查各个yii任务的执行情况，如果检测任务不存在，则进行重启并记录重启时间点
+
 source /etc/profile
 #保存原来的IFS的值
 IFS_OLD=$IFS

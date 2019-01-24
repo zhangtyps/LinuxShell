@@ -1,4 +1,5 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #一个简单的自定义时间的循环任务，循环时间按秒计算
 SLEEP_TIME=$1
 HOST_NUMBER=$2

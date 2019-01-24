@@ -1,4 +1,5 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #check_path为对照文本，如果删减机器请修改文本内容
 check_path=/home/zhangtianyu/curl_Alarm/shell_temp/chaoba.txt
 #access_path为超巴抓取文本的放置位置，此文本和上面txt_path做比对

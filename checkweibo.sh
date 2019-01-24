@@ -1,4 +1,5 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #检测curl能否正确获得200/418返回值，如果错误将调用dail.sh或者pppoe.sh
 COUNT=1
 MAXCOUNT=3

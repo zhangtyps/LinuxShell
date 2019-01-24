@@ -1,4 +1,5 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #日志抓取分类模块，统一抓取并清空，以供后面脚本使用
 #检测脚本
 cb_check=/home/zhangtianyu/curl_Alarm/cb_checkhost.sh

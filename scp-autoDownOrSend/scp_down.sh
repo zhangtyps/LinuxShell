@@ -1,4 +1,5 @@
 #!/usr/bin/expect
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #自动通过scp命令下载远程主机上的文件，无需交互式输入密码，一切自动完成
 #需先安装expect，直接yum install expect -y
 

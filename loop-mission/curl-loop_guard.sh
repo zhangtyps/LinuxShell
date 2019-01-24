@@ -1,7 +1,9 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #此脚本在定时任务里定时运行，用于检测死循环任务curl-loop.sh的运行情况
 #检测到脚本未启动，就启动脚本；检测到脚本卡死，就杀掉并重启
 #用于解决死循环脚本curl有时候会卡死的现象
+
 SCRIPT_NAME=curl-loop.sh
 #死循环任务curl-loop.sh的日志位置
 SCRIPT_LOG=/var/log/curl.log

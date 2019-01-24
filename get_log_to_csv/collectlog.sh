@@ -1,6 +1,6 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 #从各个代理机取日志
-#访问我的GitHub获得最新版的脚本：https://github.com/zhangtyps/LinuxShell
 #version 1.0
 
 #取脚本最外层绝对路径

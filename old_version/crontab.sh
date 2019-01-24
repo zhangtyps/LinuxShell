@@ -1,4 +1,5 @@
 #!/bin/bash
+#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
 true >/var/spool/cron/root
 if [ -z $1 ];then
 echo "未输入参数，0=公共，1=正文"
