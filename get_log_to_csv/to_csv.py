@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
-#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
-#将collectlog.sh的输出内容转换为表格
-#version 1.0
+#访问我的GitHub获取最新的代码：https://github.com/zhangtyps
+#配合collectlog.sh导出的outlog.log，进行写表操作
+#version 1.1 在写表前把成功率的值进行了处理，方便复制粘贴到excel
 
 import os,csv
 
