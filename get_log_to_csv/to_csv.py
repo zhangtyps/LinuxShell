@@ -19,6 +19,9 @@ with open(log_path) as f:
     for line in f:
         out_list.append(line.strip().split())
 
+for i in out_list:
+    i[2]=round(float(i[2])/100,3)
+
 #输出日志前清理上一次的日志
 try:
     os.remove(output_excel)
