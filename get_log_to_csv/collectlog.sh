@@ -1,5 +1,5 @@
 #!/bin/bash
-#访问我的GitHub获得最新的代码：https://github.com/zhangtyps
+#访问我的GitHub获取最新的代码：https://github.com/zhangtyps
 #从各个代理机取日志
 #version 1.0
 
