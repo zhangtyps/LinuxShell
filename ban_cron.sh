@@ -5,7 +5,7 @@
 @Author : 修改于zhangtyps
 @GitHub : https://github.com/zhangtyps
 @Version : 1.0
-@Desc : 替换crontab命令，去掉-r参数，每次-e修改后自动备份定时任务，删除1个月前的旧备份
+@Desc : 替换crontab命令，禁止使用-r参数，每次修改后自动备份定时任务，删除的旧备份
 INFO
 
 #在/etc/bashrc中设置别名

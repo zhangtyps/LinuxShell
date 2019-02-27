@@ -2,6 +2,11 @@
 一些工作自己写的shell脚本，放在这里记录一下
 
 
+#### ban_cron.sh 在/etc/bashrc里alias设置别名，替代crontab命令，防止被开发误删，以及定时任务每次修改后自动备份
+```console
+./ban_cron.sh
+```
+
 #### process_check.sh 检测进程（可自定义进程名）是否挂了并自动重启一个小脚本
 ```console
 # 检测原理是通过端口监听的方式，如果该进程没有监听端口，加入进去也是没有卵用的（可能以后会改吧）
@@ -72,10 +77,6 @@
 ./checkweibo.sh
 ```
 
-#### 统计squid.log，计算代理请求次数和代理成功率
-```console
-./count-squid.sh
-```
 
 #### 老版本的zabbix2.4.7客户端自动部署安装脚本，因原脚本有问题，此为本人修改过的脚本
 ```console
