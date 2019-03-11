@@ -4,7 +4,7 @@
 @Time : 2019/02/19 11:49:39
 @Author : zhangtyps
 @GitHub : https://github.com/zhangtyps
-@Version : 1.1 修正一些bug，优化了输出结果
+@Version : 1.2 优化了脚本结构
 @Desc : 检测进程监听的状态，自动重启挂了的端口监听进程
 INFO
 
@@ -31,11 +31,14 @@ function check_process() {
     fi
 }
 
-#main
-i=0
-get_time
-while [ $i -lt ${#process[@]} ]
-do
-    check_process ${process[i]}
-    let i++
-done
+function main() {
+    i=0
+    get_time
+    while [ $i -lt ${#process[@]} ]
+    do
+        check_process ${process[i]}
+        let i++
+    done
+}
+
+main
