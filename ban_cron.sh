@@ -8,8 +8,10 @@
 @Desc : 替换crontab命令，禁止使用-r参数，每次修改后自动备份定时任务，删除的旧备份
 INFO
 
-#在/etc/bashrc中设置别名
+#使用方法：
+#在/etc/bashrc中加入这么一行，路径请根据脚本位置自行修改
 #alias crontab='/root/ban_cron.sh'
+#然后执行source /etc/bashrc使之生效即可，测试请先用crontab -e看看是否有备份，再测试crontab -r命令
 
 source /etc/profile;
 source ~/.bash_profile;
