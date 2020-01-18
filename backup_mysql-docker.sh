@@ -18,7 +18,7 @@ function backup_data() {
     DATE=`date +'%Y-%m-%d_%H-%M-%S'`
     echo $DATE
     docker exec -it phpipam_phpipam-mariadb_1 mysqldump -uroot -pmy_secret_mysql_root_pass -B phpipam | gzip >$BACKUP_URL/$BACKUP_FILE_NAME-$DATE.gz
-    touch $BACKUP_URL/$BACKUP_FILE_NAME-$DATE.gz
+    #touch $BACKUP_URL/$BACKUP_FILE_NAME-$DATE.gz
 }
 
 #检测删除备份模块
