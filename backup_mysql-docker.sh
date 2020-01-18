@@ -1,6 +1,6 @@
 #!/bin/bash
 :<<INFO
-@File : backup.sh
+@File : backup_mysql-docker.sh
 @Time : 2020/01/18 17:16:09
 @Author : zhangtyps
 @GitHub : https://github.com/zhangtyps
