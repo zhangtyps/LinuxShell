@@ -2,10 +2,10 @@
 一些工作自己写的shell脚本，放在这里记录一下
 
 #### backup_mysql-docker.sh 定时备份docker-mysql/mariadb数据库，并自动删除原来旧的备份（手动指定保留的旧备份数量）
-2020/1/19更新：不会删除相同目录下不包含备份文件名的文件，防止误删除
 ```console
 ./backup_mysql-docker.sh
 ```
+2020/1/19更新：不会删除相同目录下不包含备份文件名的文件，防止误删除
 #
 
 #### ban_cron.sh 在/etc/bashrc里alias设置别名，替代crontab命令，防止被开发误删，以及定时任务每次修改后自动备份
