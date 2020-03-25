@@ -6,6 +6,7 @@
 @GitHub : https://github.com/zhangtyps
 @Version : 1.1
 @Desc : 通过定时任务运行此脚本，每次运行备份一次docker-mariadb数据库；并检查备份文件数量是否超过指定数量，删除最旧的备份文件（不会删除目录下不包含该文件名的文件，防止误删除）。
+2020/03/25 更新备份外部数据库的功能，直接在脚本参数里加入ip地址即可，如“/root/backup_jumpserver.sh 172.20.0.3”
 INFO
 
 #指定备份文件保存的路径
@@ -21,11 +22,16 @@ DB_DOCKER_PASSWD=my_secret_mysql_root_pass
 DB_DOCKER_DATABASE=phpipam
 
 
-#备份容器数据库模块
+#备份数据库模块(备份容器内置数据库无需带入参数；如果带入ip地址，则认为是备份外部数据库)
 function backup_data() {
     DATE=`date +'%Y-%m-%d_%H-%M-%S'`
     echo $DATE
-    docker exec $DB_DOCKER_NAME mysqldump -u$DB_DOCKER_USER -p$DB_DOCKER_PASSWD -B $DB_DOCKER_DATABASE | gzip >$BACKUP_URL/$BACKUP_FILE_NAME-$DATE.gz
+    if [ -z $1 ];then
+        docker exec $DB_DOCKER_NAME mysqldump -u$DB_DOCKER_USER -p$DB_DOCKER_PASSWD -B $DB_DOCKER_DATABASE | gzip >$BACKUP_URL/$BACKUP_FILE_NAME-$DATE.gz
+    else
+        mysqldump -h$1 -u$DB_DOCKER_USER -p$DB_DOCKER_PASSWD -B $DB_DOCKER_DATABASE | gzip >$BACKUP_URL/$BACKUP_FILE_NAME-$DATE.gz
+    fi
+
     if [ $? -eq 0 ];then
         echo "数据库备份成功！备份文件位于：$BACKUP_URL/$BACKUP_FILE_NAME-$DATE.gz"
     else
@@ -50,8 +56,8 @@ function delete_backup_data() {
 }
 
 function main() {
-    backup_data
+    backup_data $1
     delete_backup_data
 }
 
-main
+main $1
