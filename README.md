@@ -1,6 +1,13 @@
 # Linux Shell
 一些工作自己写的shell脚本，放在这里记录一下
 
+#### pullk8s.sh 通过阿里云国内镜像一件拉取k8s组件，并批量改tag（供kubeadm init时使用）
+```console
+./kubernetes/pullk8s.sh
+```
+#
+
+
 #### backup_mysql-docker.sh 定时备份docker-mysql/mariadb数据库，并自动删除原来旧的备份（手动指定保留的旧备份数量）
 ```console
 ./backup_mysql-docker.sh
