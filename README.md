@@ -1,6 +1,13 @@
 # Linux Shell
 一些工作自己写的shell脚本，放在这里记录一下
 
+#### Linux批量telnet工具，在脚本同目录下新建一个telnet_list.txt文件，每行写一个ip/域名+端口，再建一个名为result目录即可批量telnet端口
+```console
+./telnet/telnet.sh
+```
+#
+
+
 #### pullk8s.sh 通过阿里云国内镜像一件拉取k8s组件，并批量改tag（供kubeadm init时使用）
 ```console
 ./kubernetes/pullk8s.sh
