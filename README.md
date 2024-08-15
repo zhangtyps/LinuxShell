@@ -4,6 +4,7 @@
 #### Linux批量telnet工具，在脚本同目录下新建一个telnet_list.txt文件，每行写一个ip/域名+端口，再建一个名为result目录即可批量telnet端口
 ```console
 ./telnet/telnet.sh
+./telnet/telnet_new.sh 建议使用新版
 ```
 #
 
